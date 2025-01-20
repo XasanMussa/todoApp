@@ -1,0 +1,170 @@
+
+  
+*{
+    box-sizing: border-box;
+    
+}
+#root {
+    height: 100%;
+  }
+html body{
+    font-family: sans-serif;
+    background-color: #fcfcfc;
+    
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+.App{
+    padding: 20px;
+    margin: 150px 550px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 550px;
+    
+    
+}
+.darkApp{
+    padding: 20px;
+    margin: 150px 550px;
+    color: aquamarine;
+    background-color: #001824;
+    box-shadow: 5px 5px 15px rgb(255, 255, 255);
+    width: 550px;
+    
+    
+}
+
+.addtask{
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+}
+.addtask .newTaskbtn{
+    border: none;
+    outline: none;
+    background-color:#caf0f8;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 15px;
+    color: blue;
+    
+}
+.addtask .newTaskbtn:hover{
+    cursor: pointer;
+}
+
+.addtask .newTaskbtn, span{
+    font-weight: bold;
+    font-size: 15px;
+}
+.navigation{
+    margin-top: 30px;
+    
+}
+.navigation span{
+    padding: 30px;
+    color: grey;
+    
+}
+
+.navigation span:hover{
+    cursor: pointer;
+}
+
+.navigation .active{
+    color: blue;
+}
+
+.navigation span .round{
+    /* border: 2px solid black; */
+    padding: 2px;
+    margin-left: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 10px;
+    border-radius: 40%;
+    color: white;
+    background-color: #7678ed;
+}
+
+.task{
+    padding: 7px;
+    margin:20px 20px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(255, 255, 255);
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+.darkTask{
+    padding: 7px;
+    margin:20px 20px;
+    background-color: #001824;
+    box-shadow: 5px 5px 15px rgb(255, 255, 255);
+    width: 450px;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.checkbox{
+    margin: 20px 20px;
+    appearance: none;
+    border-radius: 50%;
+    border: 2px solid #7678ed;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative; /* For positioning the checkmark */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.checkbox:checked{
+    background-color: #7678ed;
+}
+.checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  }
+
+ .addTaskForm{
+    margin:20px 20px;
+ }
+  .addTaskForm input{
+    border-radius: 10px;
+    padding: 5px;
+    /* border: none; */
+    outline: none
+  }
+
+  .addTaskForm button{
+    border: none;
+    outline: none;
+    background-color:blue;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: white;
+    margin-left: 5px;
+    
+  }
+  .addTaskForm button:hover{
+    cursor: pointer;
+  }
+
+.darkmode{
+    background-color: #001824;
+    color: white;
+    border-radius: 10px;
+}
